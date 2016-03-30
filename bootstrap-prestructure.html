@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Durian Portfolio</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img class="title-logo img-responsive" src="https://discourse-cdn.global.ssl.fastly.net/udacity/uploads/default/original/3X/c/9/c962d32e51ac48a6ed0dfd357bb8e86bd397ddc5.jpg" alt="Responsive image">
+            </div>
+            <div class="col-md-6 text-right text-uppercase">
+                <h1 class="title-super text-thin">Takahiro Morita</h1>
+                <h3>Front-end Ninja</h3>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-12">
+                <hr>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-12">
+                <!---Change imege with Kiyomizudera -->
+                <img class="img-responsive" id ="jumbotron" src="img/beach.jpg" alt="Responsive image" data-toggle="modal" data-target="#project0">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="text-muted">Featured Work</h2>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <!---Change imege with arcadegame-->
+                <img class="image img-responsive" src="img/arcadegame.png" alt="Arcade game image" data-toggle="modal" data-target="#project1">
+                <h3>Classic Arcade Game</h3>
+                <p><a href="https://github.com/Durian1-Monkey/frontend-nanodegree-arcade-game-1">GitHub file</a></p>
+            </div>
+            <div class="col-md-4">
+                <!---Change imege with resume -->
+                <img class="image img-responsive" src="img/neighborhoodmap.png" alt="Neighborhood map image" data-toggle="modal" data-target="#project2">
+                <h3>Neighborhood Map</h3>
+                <p><a href="https://github.com/Durian1-Monkey/Neighborhoood-Map-Project">GitHub file</a></p>
+            </div>
+            <div class="col-md-4">
+                <!---Change imege with this portofolio -->
+                <img class="image img-responsive" src="img/websiteoptimization.png" alt="Website optimization image" data-toggle="modal" data-target="#project3">
+                <h3>Website Optimization</h3>
+                <p><a href="https://github.com/Durian1-Monkey/frontend-nanodegree-mobile-portfolio">GitHub file</a></p>
+            </div>
+        </div>
+    </div>
+    <!-- Modals0 -->
+    <div class="modal fade" id="project0" tabindex="-1" role="dialog" aria-labelledby="project0h4" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="project0h4">Resume</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="image img-responsive" src="resume.png" alt="Resume Image"> My first project in the Udacity Front-End Web Developer nanodegree introduced HTML and CSS.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modals1 -->
+    <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="project1h4" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="project1h4">Responsive Web Design</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="image img-responsive" src="png/dog.jpg" alt="Pretty kitten"> In this project, I learned how to create responsive web page that work well on any devices- phone, tablet, desktop or anything between.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modals2 -->
+    <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="project2h4" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="project2h4">Responsive Images</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="image img-responsive" src="png/still_life.jpg" alt="Pretty kitten"> My first project in the Udacity Front-End Web Developer nanodegree introduced HTML and CSS. In my second project, Building an Online Resume, I learned XXXXXX...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modals3 -->
+    <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="project3h4" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="project3h4">Resume</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="image img-responsive" src="file:///C:/Users/taka/Documents/GitHub/placepuppy/images/homepage/Gera7tz.jpg" alt="Pretty dog"> My first project in the Udacity Front-End Web Developer nanodegree introduced HTML and CSS. In my second project, Building an Online Resume, I learned XXXXXX...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
