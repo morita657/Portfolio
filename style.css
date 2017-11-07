@@ -23,10 +23,19 @@ body {
 }
 .image {
     margin: auto;
+    width: 100%;
+    max-width: 100%;
+}
+.col-md-4 {
+    padding: 0;
+
 }
 h1 {
     color: red;
     padding-top: 20px;
+}
+h3 {
+    background-color: rgba(127, 127, 127, .5);
 }
 
 .description {
@@ -40,7 +49,7 @@ h1 {
 
 @media only screen and (max-width: 500px) {
     body {
-        background-color: #ccff66;
+        /* background-color: #ccff66; */
     }
 
     h2 {
@@ -56,7 +65,7 @@ h1 {
 
 @media only screen and (min-width: 501px) and (max-width: 900px) {
     body {
-        background-color: #ffc6aa;
+        /* background-color: #ffc6aa; */
     }
 
     h2 {
