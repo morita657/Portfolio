@@ -7,10 +7,11 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
     <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
     <!-- <link rel="stylesheet" href="http://getbootstrap.com/dist/css/bootstrap.min.css"> -->
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
         crossorigin="anonymous">
     <link rel="stylesheet" href="http://getbootstrap.com/docs/4.0/examples/starter-template/starter-template.css">
+    <link rel="stylesheet" href="style.css">
     <title>Durian Portfolio</title>
 </head>
 
@@ -19,6 +20,9 @@
         img {
             max-width: 15.42857rem;
             max-height: 14rem;
+            max-width: 100%;
+            width: 100%;
+            
         }
     </style>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
@@ -37,13 +41,13 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">GitHub</a>
+                    <a class="nav-link" href="http://github.com/morita657">GitHub</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Resume</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Email</a>
+                    <a class="nav-link" href="mailto:morita657@gmail.com">Email</a>
                 </li>
             </ul>
         </div>
@@ -56,22 +60,21 @@
         </div>
         <div class="row text-center">
             <div class="col-md-4">
-                <img class="image img-responsive" src="img/word_counter.png" alt="word counter image" data-toggle="modal" data-target="#project4">
+                <img class="image img-responsive" src="dist/word_counter.png" alt="word counter image" data-toggle="modal" data-target="#project4">
                 <h3>Word Counter</h3>
                 <p>
                     <a href="https://github.com/morita657/wordcount-premium">GitHub file</a>
                 </p>
             </div>
             <div class="col-md-4">
-                <img class="image img-responsive" src="img/linux_server_configuration.png" alt="linux penguin image" data-toggle="modal"
-                    data-target="#project5">
+                <img class="image img-responsive" src="dist/linux_server_configuration.png" alt="linux penguin image" data-toggle="modal" data-target="#project5">
                 <h3>Linux Server Configuration</h3>
                 <p>
                     <a href="https://github.com/morita657/Linux-Server-Configuration">GitHub file</a>
                 </p>
             </div>
             <div class="col-md-4">
-                <img class="image img-responsive" src="img/item_catalog.png" alt="item catalog image" data-toggle="modal" data-target="#project6">
+                <img class="image img-responsive" src="dist/item_catalog.png" alt="item catalog image" data-toggle="modal" data-target="#project6">
                 <h3>Item Catalog</h3>
                 <p>
                     <a href="https://github.com/morita657/Item-Catalog">GitHub file</a>
@@ -81,14 +84,14 @@
 
         <div class="row text-center">
             <div class="col-md-4">
-                <img class="image img-responsive" src="img/logs_analysis.png" alt="binders image" data-toggle="modal" data-target="#project7">
+                <img class="image img-responsive" src="dist/logs_analysis.png" alt="binders image" data-toggle="modal" data-target="#project7">
                 <h3>Logs Analysis</h3>
                 <p>
                     <a href="https://github.com/morita657/Logs-Analysis">GitHub file</a>
                 </p>
             </div>
             <div class="col-md-4">
-                <img class="image img-responsive" src="img/multi_user_blog.png" alt="blog image" data-toggle="modal" data-target="#project8">
+                <img class="image img-responsive" src="dist/multi_user_blog.png" alt="blog image" data-toggle="modal" data-target="#project8">
                 <h3>Multi User Blog</h3>
                 <p>
                     <a href="https://github.com/morita657/Multi-Use-Blog">GitHub file</a>
@@ -96,123 +99,17 @@
             </div>
             <!-- TODO: ADD PROJECT9 -->
             <div class="col-md-4">
-                <img class="image img-responsive" src="img/multi_user_blog.png" alt="blog image" data-toggle="modal" data-target="#project9">
+                <img class="image img-responsive" src="dist/multi_user_blog.png" alt="blog image" data-toggle="modal" data-target="#project9">
                 <h3>Multi User Blog</h3>
                 <p>
                     <a href="https://github.com/morita657/Multi-Use-Blog">GitHub file</a>
                 </p>
             </div>
         </div>
-        <div class="row text-center">
-            <div class="col-md-4">
-                <!---Change imege with arcadegame-->
-                <img class="image img-responsive" src="img/arcadegame.png" alt="Arcade game image" data-toggle="modal" data-target="#project1">
-                <h3>Classic Arcade Game</h3>
-                <p>
-                    <a href="https://github.com/Durian1-Monkey/frontend-nanodegree-arcade-game-1">GitHub file</a>
-                </p>
-            </div>
-            <div class="col-md-4">
-                <!---Change imege with resume -->
-                <img class="image img-responsive" src="img/neighborhoodmap.png" alt="Neighborhood map image" data-toggle="modal" data-target="#project2">
-                <h3>Neighborhood Map</h3>
-                <p>
-                    <a href="https://github.com/Durian1-Monkey/Neighborhoood-Map-Project">GitHub file</a>
-                </p>
-            </div>
-            <div class="col-md-4">
-                <!---Change imege with this portofolio -->
-                <img class="image img-responsive" src="img/websiteoptimization.png" alt="Website optimization image" data-toggle="modal"
-                    data-target="#project3">
-                <h3>Website Optimization</h3>
-                <p>
-                    <a href="https://github.com/Durian1-Monkey/Mobile-portfolio">GitHub file</a>
-                </p>
-            </div>
-        </div>
 
     </main>
     <!-- Modals1 -->
-    <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="project1h4" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="project1h4">
-                        <a href="http://durian1-monkey.github.io/Arcade-game-frogger/">Classic Arcade Game Frogger Project</a>
-                    </h4>
-                </div>
-                <div class="modal-body">
-                    <div class="text-center">
-                        <a href="http://durian1-monkey.github.io/Arcade-game-frogger/">
-                            <img class="image img-responsive center-block" src="img/arcadegame.png" alt="Pretty kitten">
-                        </a>
-                    </div>
-                    <p>This is the third project that I develop a game with vidual assets and a game loop engine; using these
-                        tools I add a number of entities to the game including the player characters and enemies to recreate
-                        the game. This game is developed using OOP JavaScript and HTML5 Canvas.</p>
-
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Modals2 -->
-    <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="project2h4" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="project2h4">
-                        <a href="http://durian1-monkey.github.io/Neighborhoood-Map-Project/">Neighborhood Map Project</a>
-                    </h4>
-                </div>
-                <div class="modal-body">
-                    <div class="text-center">
-                        <a href="http://durian1-monkey.github.io/Neighborhoood-Map-Project/">
-                            <img class="image img-responsive" src="img/neighborhoodmap.png" alt="Pretty kitten">
-                        </a>
-                    </div>
-                    <p>This is the fifth project that I develop a single-page application featuring a map of my neighborhood.
-                        It is added additional functionality to this application, including: custom map markers to identify
-                        popular locations and places, a search function to easily discover these locations, and a listview
-                        to support simple browsing of all locations. And also implemented Wikipedia API that provide additional
-                        information about each of these locations.</p>
-
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Modals3 -->
-    <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="project3h4" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="project3h4">
-                        <a href="http://durian1-monkey.github.io/Mobile-portfolio/">Website Optmization Project</a>
-                    </h4>
-                </div>
-                <div class="modal-body">
-                    <div class="text-center">
-                        <a href="http://durian1-monkey.github.io/Mobile-portfolio/">
-                            <img class="image img-responsive" src="img/websiteoptimization.png" alt="Pretty dog">
-                        </a>
-                    </div>
-                    <p>This is the forth project that I optimize a provided website with a number of optimization and performance-related
-                        issues so that it achieves a target PageSpeed score more than 90 points and runs at 60 frames per
-                        second.
-                    </p>
-
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
+    
     <!-- Modals4 -->
     <div class="modal fade" id="project4" tabindex="-1" role="dialog" aria-labelledby="project4h4" aria-hidden="true">
         <div class="modal-dialog">
@@ -225,7 +122,7 @@
                 <div class="modal-body">
                     <div class="text-center">
                         <a href="https://github.com/morita657/wordcount-premium">
-                            <img class="image img-responsive" src="img/word_counter.png" alt="Word Counter Image">
+                            <img class="image img-responsive" src="dist/word_counter.png" alt="Word Counter Image">
                         </a>
                     </div>
                     <p>Built a word frequency calculator based on the text from a given URL. Displayed every data asynchronously
@@ -252,7 +149,7 @@
                 <div class="modal-body">
                     <div class="text-center">
                         <a href="https://github.com/morita657/Linux-Server-Configuration">
-                            <img class="image img-responsive" src="img/linux_server_configuration.png" alt="linux penguin image">
+                            <img class="image img-responsive" src="dist/linux_server_configuration.png" alt="linux penguin image">
                         </a>
                     </div>
                     <p>Installed and configured all required software to turn a baseline Ubuntu Amazon Web Services server into
@@ -276,7 +173,7 @@
                 <div class="modal-body">
                     <div class="text-center">
                         <a href="https://gentle-dusk-10501.herokuapp.com/">
-                            <img class="image img-responsive" src="img/item_catalog.png" alt="item catalog image">
+                            <img class="image img-responsive" src="dist/item_catalog.png" alt="item catalog image">
                         </a>
                     </div>
                     <p>Developed a content management system using the Flask framework in Python. Authentication is provided
@@ -300,7 +197,7 @@
                 <div class="modal-body">
                     <div class="text-center">
                         <a href="https://github.com/morita657/Logs-Analysis">
-                            <img class="image img-responsive" src="img/logs_analysis.png" alt="item catalog image">
+                            <img class="image img-responsive" src="dist/logs_analysis.png" alt="item catalog image">
                         </a>
                     </div>
                     <p>Applied SQL skills to a reporting tool that summarizes data from a large database.</p>
@@ -323,7 +220,7 @@
                 <div class="modal-body">
                     <div class="text-center">
                         <a href="https://hello-udacity-145903.appspot.com/blog">
-                            <img class="image img-responsive" src="img/multi_user_blog.png" alt="item catalog image">
+                            <img class="image img-responsive" src="dist/multi_user_blog.png" alt="item catalog image">
                         </a>
                     </div>
                     <p>Built a multi-user blog, hosted on Google App Engine, with comments and login functionality.</p>
@@ -336,7 +233,7 @@
     </div>
     <!-- TODO: ADD PROJECT9 MODAL -->
     <!-- Modals8 -->
-    <div class="modal fade" id="project8" tabindex="-1" role="dialog" aria-labelledby="project8h4" aria-hidden="true">
+    <div class="modal fade" id="project9" tabindex="-1" role="dialog" aria-labelledby="project8h4" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -347,7 +244,7 @@
                 <div class="modal-body">
                     <div class="text-center">
                         <a href="https://hello-udacity-145903.appspot.com/blog">
-                            <img class="image img-responsive" src="img/multi_user_blog.png" alt="item catalog image">
+                            <img class="image img-responsive" src="dist/multi_user_blog.png" alt="item catalog image">
                         </a>
                     </div>
                     <p>Built a multi-user blog, hosted on Google App Engine, with comments and login functionality.</p>
