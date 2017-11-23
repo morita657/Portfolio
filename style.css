@@ -35,6 +35,21 @@ h3 {
     background-color: rgba(127, 127, 127, .5);
 }
 
+img {
+    max-width: 15.42857rem;
+    max-height: 14rem;
+    max-width: 100%;
+    width: 100%;   
+}
+.profile-pic {
+    float: left;
+    margin-right: 20px;
+    border: solid 1px #000;
+}
+.skills {
+    font-style: italic;
+    background-color: #fff;
+}
 .description {
     max-width: 460px;
 }
