@@ -41,6 +41,9 @@ img {
     max-width: 100%;
     width: 100%;   
 }
+a {
+    word-wrap: break-word;
+}
 .profile-pic {
     float: left;
     margin-right: 20px;
@@ -60,10 +63,6 @@ img {
 }
 
 @media only screen and (max-width: 500px) {
-    body {
-        /* background-color: #ccff66; */
-    }
-
     h2 {
         color: #996633;
         font-size: 2em;
@@ -73,13 +72,12 @@ img {
         color: #996633;
         font-size: 2em;
     }
+    .col-md-4 {
+        margin-bottom: auto;
+    }
 }
 
 @media only screen and (min-width: 501px) and (max-width: 900px) {
-    body {
-        /* background-color: #ffc6aa; */
-    }
-
     h2 {
         color: #006;
         font-size: 2em;
