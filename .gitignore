@@ -1,3 +1,13 @@
 /node_modules
 /dist
 /.publish
+/Applications/*
+/seeds
+/migrations
+/db
+/knexfile.js
+/build.js
+/api.js
+/server.js
+/css
+/fonts
