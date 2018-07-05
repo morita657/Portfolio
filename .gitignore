@@ -6,7 +6,6 @@
 /migrations
 /db
 /knexfile.js
-/build.js
 /api.js
 /server.js
 /css
