@@ -14,7 +14,7 @@
     "rollback": "knex migrate:rollback --knexfile server/knexfile.js ",
     "server": "nodemon node server.js",
     "deploy": "node ./node_modules/vue-gh-pages/index.js",
-    "homepage": "https://github.com/morita657/portofolio"
+    "homepage": "https://github.com/morita657/Portofolio"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.0",
