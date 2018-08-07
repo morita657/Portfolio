@@ -3,7 +3,7 @@
       <greeting />
       <about />
       <h1>Projects</h1>
-      <ul class="project"  v-for="project in information">
+      <ul class="project"  v-for="project in information" :key="project.id" >
       <div>
         <a v-bind:href="project.projectLink">
           <img class="image img-responsive" v-bind:src="'images/'+project.image+'.png'" v-bind:alt="project.title +' image'">
@@ -11,7 +11,7 @@
         <h3>{{project.title}}</h3>
         <p>
           <a id="file-btn" v-bind:href="project.githubLink">GitHub file</a>
-          <span v-for="icon in project.icons">
+          <span v-for="icon in project.icons" :key="icon.id">
             <i v-bind:class="icon+' fa-2x'"></i>
           </span>
         </p>
