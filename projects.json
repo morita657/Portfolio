@@ -58,5 +58,15 @@
     "githubLink": "https://github.com/morita657/Item-Catalog",
     "icons": ["fab fa-python", "fas fa-database"],
     "tags": ["Python", "Flask"]
+  },
+  {
+    "id": 7,
+    "title": "Geo Spatial Analysis with Apache Spark",
+    "description": "Identified a list of the fifty most significant hot spot cells using the collected New York City taxi trip data with langitude and latitude divided by month of pickup locations from January 2009 to June 2015 with the Getix-Ord Gi* statistic. This project has been conducted using Apache Spark and Scala.",
+    "image": "GIS",
+    "projectLink": "https://gentle-dusk-10501.herokuapp.com/",
+    "githubLink": "https://github.com/morita657/CSE/tree/master/CSE-511",
+    "icons": ["fab fa-python", "fas fa-database"],
+    "tags": ["Apache Spark", "Scala"]
   }
 ]
