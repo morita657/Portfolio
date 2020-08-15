@@ -1,13 +1,14 @@
 <template>
-  <div class="container-fluid projects">
-    <select v-model="selected">
+  <div class="container-fluid">
+    <label for="category">Category: </label>
+    <select id="category" v-model="selected">
       <option v-for="option in options" :key="option.id">{{
         option.text
       }}</option>
     </select>
-    <div class="flex-row flex-nowrap">
+    <div class="flex-row flex-nowrap projects" id="projects">
       <div
-        class="col-4"
+        class="col-lg-3 col-md-4 col-sm-6"
         style="width: 18rem;"
         v-for="project in filteredProjects"
         :key="project.id"
@@ -39,9 +40,10 @@ export default {
   data: function() {
     return {
       selected: "",
-      projects,
+      projects: projects.reverse(),
       filteredProjects: projects,
       options: [
+        { id: 0, text: "All" },
         { id: 0, text: "React" },
         { id: 1, text: "Python" },
         { id: 2, text: "Linux" },
@@ -73,7 +75,9 @@ export default {
 
 <style>
 .projects {
-  overflow-x: scroll;
+  width: 90%;
+  border: solid 5px #000;
+  margin: auto;
 }
 
 .flex-row {
@@ -83,6 +87,7 @@ export default {
   -webkit-flex-direction: row !important;
   -ms-flex-direction: row !important;
   flex-direction: row !important;
+  overflow-x: scroll;
 }
 
 .flex-nowrap {
