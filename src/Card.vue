@@ -1,12 +1,23 @@
 <template>
   <div class="container-fluid">
-    <label for="category">Category: </label>
-    <select id="category" v-model="selected">
-      <option v-for="option in options" :key="option.id">{{ option }}</option>
-    </select>
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-ms-6">
+        <label for="category">FILTER BY </label>
+        <select id="category" v-model="selected">
+          <option v-for="option in options" :key="option.id">{{
+            option
+          }}</option>
+        </select>
+      </div>
+      <div class="col-lg-6 col-md-6 col-ms-6 search-right">
+        <b>Projects matched({{ filteredProjects.length }})</b>
+
+        <div id="search-result"></div>
+      </div>
+    </div>
     <div class="flex-row flex-nowrap projects" id="projects">
       <div
-        class="col-lg-3 col-md-4 col-sm-6"
+        class="col-lg-3 col-md-4 col-sm-6 col-12"
         style="width: 18rem;"
         v-for="project in filteredProjects"
         :key="project.id"
@@ -20,7 +31,7 @@
             height="180"
           />
           <div class="card-body">
-            <h5 class="card-title">{{ project.title }}</h5>
+            <b class="card-title">{{ project.title }}</b>
             <p class="card-text">{{ project.description }}</p>
             <a v-bind:href="project.githubLink" class="btn btn-primary"
               >GitHub</a
@@ -52,7 +63,6 @@ export default {
           }
         });
       });
-      console.log("categoies: ", categories);
       return categories;
     },
   },
@@ -81,7 +91,19 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+label {
+  font-family: Open Sans, sans-serif;
+}
+
+.search-right {
+  text-align: left;
+}
+
+#search-result {
+  margin: 1em 0;
+}
+
 .projects {
   width: 90%;
   border: solid 5px #000;
@@ -126,5 +148,11 @@ img {
   image-rendering: crisp-edges;
   -ms-interpolation-mode: nearest-neighbor;
   /* IE (non-standard property) */
+}
+
+@media only screen and (max-width: 400px) {
+  .search-right {
+    text-align: center;
+  }
 }
 </style>
