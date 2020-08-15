@@ -1,5 +1,6 @@
-var { task, series, src, dest } = require("gulp");
-var imageResize = require("gulp-image-resize");
+const { gulp, task, series, src, dest } = require("gulp");
+// const gulp = require("gulp");
+const imageResize = require("gulp-image-resize");
 const image = require("gulp-image");
 // var ghPages = require("gulp-gh-pages");
 
@@ -29,11 +30,11 @@ function optimize() {
     .pipe(dest("dist/"));
 }
 
-task("deploy", function() {
+function deploy() {
   return gulp
     .src("./**/*")
     .pipe(deploy())
     .pipe(ghPages());
-});
+}
 
 exports.default = series(resize, optimize);
