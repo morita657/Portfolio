@@ -2,9 +2,7 @@
   <div class="container-fluid">
     <label for="category">Category: </label>
     <select id="category" v-model="selected">
-      <option v-for="option in options" :key="option.id">{{
-        option.text
-      }}</option>
+      <option v-for="option in options" :key="option.id">{{ option }}</option>
     </select>
     <div class="flex-row flex-nowrap projects" id="projects">
       <div
@@ -42,14 +40,21 @@ export default {
       selected: "",
       projects: projects.reverse(),
       filteredProjects: projects,
-      options: [
-        { id: 0, text: "All" },
-        { id: 0, text: "React" },
-        { id: 1, text: "Python" },
-        { id: 2, text: "Linux" },
-        { id: 3, text: "Scala" },
-      ],
     };
+  },
+  computed: {
+    options: function() {
+      const categories = ["All"];
+      this.projects.forEach((project) => {
+        project["tags"].forEach((tag) => {
+          if (!categories.includes(tag)) {
+            categories.push(tag);
+          }
+        });
+      });
+      console.log("categoies: ", categories);
+      return categories;
+    },
   },
   watch: {
     selected: function(newQuestion, oldQuestion) {
@@ -62,10 +67,13 @@ export default {
   methods: {
     getAnswer: function() {
       if (this.selected.indexOf("?") === -1) {
-        const projects = this.projects;
-        this.filteredProjects = projects.filter((project) =>
-          project["tags"].includes(this.selected)
-        );
+        this.filteredProjects = this.projects.filter((project) => {
+          if (this.selected === "All") {
+            return true;
+          } else {
+            return project["tags"].includes(this.selected);
+          }
+        });
         return;
       }
     },
