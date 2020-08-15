@@ -1,62 +1,102 @@
 [
   {
     "id": 1,
-    "title": "Shoo-in",
-    "description":
-      "For event organizer, web based service has developed with React.For event attendee, the application has developed using React Native with Expo. The server has built with Express.js, PostgreSQL, Knex.js nad deployed on Heroku.",
-    "image": "shoo-in",
-    "projectLink": "https://cc4-flower.herokuapp.com/",
-    "githubLink": "https://github.com/shoo-in-app/",
-    "icons": ["fab fa-react", "fab fa-node", "fab fa-android", "fab fa-apple"]
+    "title": "Arcade Game Clone",
+    "description": "Arcade Game Clone built with Vanilla JavaScript.",
+    "image": "arcadegame",
+    "projectLink": "https://github.com/morita657/Arcade-game-frogger",
+    "githubLink": "https://github.com/morita657/Arcade-game-frogger",
+    "icons": ["fab fa-python", "fas fa-database"],
+    "tags": ["JavaScript", "Web"]
   },
   {
     "id": 2,
-    "title": "Music Player",
-    "description":
-      "Music Player loading songs from an external storage! This application has built in one week of Kotlin learning!",
-    "image": "music-player",
-    "projectLink": "https://github.com/morita657/music-player",
-    "githubLink": "https://github.com/morita657/music-player",
-    "icons": ["fab fa-android", "fas fa-mobile-alt"]
+    "title": "Traditional Game Center",
+    "description": "Couple of traditional games developed with JavaScript. Select with your preference and start play!",
+    "image": "gamecenter",
+    "projectLink": "https://github.com/morita657/gamecenter",
+    "githubLink": "https://github.com/morita657/gamecenter",
+    "icons": ["fab fa-python", "fas fa-database"],
+    "tags": ["JavaScript", "Web"]
   },
   {
     "id": 3,
-    "title": "Hacky Instagram",
-    "description":
-      "Hacky Instgram using React/Redux! You can add, view, edit, delete photos!",
-    "image": "hacky-instagram",
-    "projectLink": "https://github.com/morita657/Photo-management-application",
-    "githubLink": "https://github.com/morita657/Photo-management-application",
-    "icons": ["fab fa-react", "fab fa-node"]
+    "title": "Neighborhoood-Map-Project",
+    "description": "This is a single-page application featuring a map of my neighborhood and a neigborhood which I would like to visit. This application has the several functionalities: map markers to identify popular locations and places I love to visit, a search function to easily discover these locations, and a listvies to support simple brwsing of all locations. As additional third-party APIs, Wikipedia articles are provided information about each locations and places.",
+    "image": "neighborhoodmap",
+    "projectLink": "https://github.com/morita657/Neighborhoood-Map-Project",
+    "githubLink": "https://github.com/morita657/Neighborhoood-Map-Project",
+    "icons": ["fab fa-python", "fas fa-database"],
+    "tags": ["JavaScript", "KnockoutJS", "Web"]
   },
   {
     "id": 4,
-    "title": "Web dictionary",
-    "description":
-      "Built a web dictionary using Next.js and React.js and deployed on Heroku. This application searches for English descriptions for you given a Japanese word.",
-    "image": "web-dictionary",
-    "projectLink": "https://damp-sierra-86852.herokuapp.com/",
-    "githubLink": "https://github.com/morita657/web-dictionary",
-    "icons": ["fab fa-react", "fab fa-node"]
-  },
-  {
-    "id": 5,
     "title": "Linux Server Configuration",
-    "description":
-      "Installed and configured all required software to turn a baseline Ubuntu Amazon Web Services server into a fully functional web application server, including Apache Web Server and PostgreSQL database server.",
+    "description": "Installed and configured all required software to turn a baseline Ubuntu Amazon Web Services server into a fully functional web application server, including Apache Web Server and PostgreSQL database server.",
     "image": "linux_server_configuration",
     "projectLink": "https://github.com/morita657/Linux-Server-Configuration",
     "githubLink": "https://github.com/morita657/Linux-Server-Configuration",
-    "icons": ["fab fa-linux"]
+    "icons": ["fab fa-linux"],
+    "tags": ["Linux", "Ubuntu"]
   },
   {
-    "id": 6,
+    "id": 5,
     "title": "Item Catalog",
-    "description":
-      "Developed a content management system using the Flask framework in Python. Authentication is provided via OAuth and all data is stored within a PostgreSQL database.",
+    "description": "Developed a content management system using the Flask framework in Python. Authentication is provided via OAuth and all data is stored within a PostgreSQL database.",
     "image": "item_catalog",
     "projectLink": "https://gentle-dusk-10501.herokuapp.com/",
     "githubLink": "https://github.com/morita657/Item-Catalog",
-    "icons": ["fab fa-python", "fas fa-database"]
+    "icons": ["fab fa-python", "fas fa-database"],
+    "tags": ["Python", "Flask", "Web"]
+  },
+  {
+    "id": 6,
+    "title": "Hacky Instagram",
+    "description": "Hacky Instgram using React/Redux! You can add, view, edit, delete photos!",
+    "image": "hacky-instagram",
+    "projectLink": "https://github.com/morita657/Photo-management-application",
+    "githubLink": "https://github.com/morita657/Photo-management-application",
+    "icons": ["fab fa-react", "fab fa-node"],
+    "tags": ["React", "Redux", "Web", "JavaScript"]
+  },
+  {
+    "id": 7,
+    "title": "Web dictionary",
+    "description": "Built a web dictionary using Next.js and React.js and deployed on Heroku. This application searches for English descriptions for you given a Japanese word.",
+    "image": "web-dictionary",
+    "projectLink": "https://damp-sierra-86852.herokuapp.com/",
+    "githubLink": "https://github.com/morita657/web-dictionary",
+    "icons": ["fab fa-react", "fab fa-node"],
+    "tags": ["Next", "Web", "JavaScript"]
+  },
+  {
+    "id": 8,
+    "title": "Shoo-in",
+    "description": "For event organizer, web based service has developed with React.For event attendee, the application has developed using React Native with Expo. The server has built with Express.js, PostgreSQL, Knex.js nad deployed on Heroku.",
+    "image": "shoo-in",
+    "projectLink": "https://cc4-flower.herokuapp.com/",
+    "githubLink": "https://github.com/shoo-in-app/",
+    "icons": ["fab fa-react", "fab fa-node", "fab fa-android", "fab fa-apple"],
+    "tags": ["React", "Redux", "Mobile", "Web", "JavaScript"]
+  },
+  {
+    "id": 9,
+    "title": "Music Player",
+    "description": "Music Player loading songs from an external storage! This application has built in one week of Kotlin learning!",
+    "image": "music-player",
+    "projectLink": "https://github.com/morita657/music-player",
+    "githubLink": "https://github.com/morita657/music-player",
+    "icons": ["fab fa-android", "fas fa-mobile-alt"],
+    "tags": ["Kotlin", "Mobile"]
+  },
+  {
+    "id": 10,
+    "title": "Geo Spatial Analysis",
+    "description": "Identified a list of the fifty most significant hot spot cells using the collected New York City taxi trip data with langitude and latitude divided by month of pickup locations from January 2009 to June 2015 with the Getix-Ord Gi* statistic. This project has been conducted using Apache Spark and Scala.",
+    "image": "GIS",
+    "projectLink": "https://gentle-dusk-10501.herokuapp.com/",
+    "githubLink": "https://github.com/morita657/CSE/tree/master/CSE-511",
+    "icons": ["fab fa-python", "fas fa-database"],
+    "tags": ["Apache Spark", "Scala"]
   }
 ]

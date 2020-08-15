@@ -1,37 +1,40 @@
-var gulp = require('gulp');
-var imageResize = require('gulp-image-resize');
-const image = require('gulp-image');
-var ghPages = require('gulp-gh-pages');
+const { gulp, task, series, src, dest } = require("gulp");
+// const gulp = require("gulp");
+const imageResize = require("gulp-image-resize");
+const image = require("gulp-image");
+// var ghPages = require("gulp-gh-pages");
 
+function resize() {
+  return src("img/*.png")
+    .pipe(imageResize())
+    .pipe(
+      imageResize({
+        width: 239,
+        height: 180,
+        crop: true,
+        upscale: false,
+      })
+    )
+    .pipe(dest("dist/"));
+}
 
-gulp.task('imageResize', function () {
-  gulp.src('img/*.png')
-    .pipe(imageResize({
-      width : 380,
-      height : 206,
-      crop : true,
-      upscale : false
-    }))
-    .pipe(gulp.dest('dist/'));
-});
+function optimize() {
+  return src(["img/*.png"])
+    .pipe(
+      image({
+        optimizationLevel: 5,
+        progressive: true,
+        interlaced: true,
+      })
+    )
+    .pipe(dest("dist/"));
+}
 
-gulp.task('images', function(cb) {
-   gulp.src(['dist/*.png']).pipe(imageop({
-       optimizationLevel: 5,
-       progressive: true,
-       interlaced: true
-   })).pipe(gulp.dest('dist/')).on('end', cb).on('error', cb);
-});
-
-gulp.task('image', function () {
-  gulp.src('dist/**/*')
-    .pipe(image())
-    .pipe(gulp.dest('img'));
-});
-
-gulp.task('deploy', function() {
-  return gulp.src('./**/*')
+function deploy() {
+  return gulp
+    .src("./**/*")
+    .pipe(deploy())
     .pipe(ghPages());
-});
+}
 
-gulp.task('default', ['imageResize', 'images']);
+exports.default = series(resize, optimize);
