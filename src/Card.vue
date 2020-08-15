@@ -15,7 +15,7 @@
         <div class="card card-block">
           <img
             class="card-img-top"
-            v-bind:src="'images/' + project.image + '.png'"
+            v-bind:src="'dist/' + project.image + '.png'"
             v-bind:alt="project.title + ' image'"
             width="239"
             height="180"
