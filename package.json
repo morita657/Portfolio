@@ -20,9 +20,7 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.0",
     "@fortawesome/free-solid-svg-icons": "^5.1.0",
     "@fortawesome/vue-fontawesome": "^0.1.0",
-    "i": "^0.3.6",
-    "npm": "^6.1.0",
-    "vue": "^2.5.11"
+    "i": "^0.3.6"
   },
   "devDependencies": {
     "@vue/test-utils": "^1.0.0-beta.15",
@@ -55,19 +53,23 @@
     "knex": "^0.14.6",
     "mocha": "^5.1.1",
     "mocha-webpack": "^1.1.0",
-    "morgan": "^1.9.0",
+    "morgan": "^1.9.1",
     "nodemon": "^1.17.5",
+    "npm": "^6.1.0",
     "pg": "^7.4.3",
     "prettier": "^1.12.1",
     "pretty-quick": "^1.4.1",
     "uglifyjs-webpack-plugin": "^1.2.7",
+    "vue": "^2.5.11",
     "vue-awesome": "^3.0.3",
     "vue-gh-pages": "^1.16.3",
     "vue-js-modal": "^1.3.16",
-    "vue-loader": "^13.0.5",
+    "vue-loader": "14.2.2",
+    "vue-style-loader": "^4.1.2",
     "vue-template-compiler": "^2.4.4",
-    "webpack": "^3.6.0",
-    "webpack-dev-server": "^2.9.1",
+    "webpack": "4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.1.11",
     "webpack-node-externals": "^1.7.2"
   }
 }
