@@ -4,6 +4,7 @@
       <div class="col-lg-6 col-md-6 col-ms-6">
         <label for="category">FILTER BY </label>
         <select id="category" v-model="selected">
+          <option :selected="true">All</option>
           <option v-for="option in options" :key="option.id">{{
             option
           }}</option>
@@ -48,14 +49,14 @@ import projects from "../projects.json";
 export default {
   data: function() {
     return {
-      selected: "",
+      selected: "All",
       projects: projects.reverse(),
       filteredProjects: projects,
     };
   },
   computed: {
     options: function() {
-      const categories = ["All"];
+      const categories = [];
       this.projects.forEach((project) => {
         project["tags"].forEach((tag) => {
           if (!categories.includes(tag)) {
