@@ -13,8 +13,8 @@ module.exports = {
     devtoolFallbackModuleFilenameTemplate: "[absolute-resource-path]?[hash]"
   },
   module: {
-    loaders: [{ test: /\.jsx?$/, loader: "babel" }],
     rules: [
+      { test: /\.jsx?$/, loader: "babel-loader" },
       {
         test: /\.css$/,
         use: ["vue-style-loader", "css-loader"]
