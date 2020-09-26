@@ -103,7 +103,7 @@
     "id": 11,
     "title": "Super Duper Storage",
     "description": "One of the projects on Udacity Java program. Built Java REST API on top of SpringBoot utilizing MyBatis, Thymeleaf and H2 in-memory database. This project allows you to store files, text memos and credentials which is encrypted with AES(Advanced encryption Standard) and random key.",
-    "image": "GIS",
+    "image": "logs_analysis",
     "projectLink": "https://github.com/morita657/Cloud-Storage",
     "githubLink": "https://github.com/morita657/Cloud-Storage",
     "icons": ["fab fa-java", "fas fa-database"],
