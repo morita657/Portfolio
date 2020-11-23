@@ -64,6 +64,7 @@ export default {
           }
         });
       });
+      categories.sort();
       return categories;
     },
   },
