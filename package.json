@@ -56,7 +56,6 @@
     "nodemon": "^1.17.5",
     "npm": "^6.14.6",
     "pg": "^7.4.3",
-    "prettier": "^1.12.1",
     "pretty-quick": "^1.4.1",
     "uglifyjs-webpack-plugin": "^1.2.7",
     "vue": "^2.5.11",
@@ -68,7 +67,7 @@
     "vue-template-compiler": "^2.4.4",
     "webpack": "4.44.1",
     "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.1.11",
+    "webpack-dev-server": "^3.11.0",
     "webpack-node-externals": "^1.7.2"
   }
 }
