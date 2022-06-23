@@ -47,7 +47,7 @@
     "gulp-image": "^6.2.1",
     "gulp-image-resize": "^0.13.1",
     "husky": "^0.14.3",
-    "jsdom": "^11.10.0",
+    "jsdom": "^16.5.0",
     "jsdom-global": "^3.0.2",
     "knex": "^0.19.5",
     "mocha": "^5.1.1",
